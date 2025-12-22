@@ -1,0 +1,42 @@
+#defining the data quality rules
+
+dataset:
+  name: orders
+  path: data/orders.csv
+  primary_key: order_id
+
+  freshness:
+  column: order_ts
+  max_age_days: 30
+
+columns:
+  order_id:
+    required: true
+    type: int
+    unique: true
+
+  customer_id:
+    required: true
+    type: int
+
+  order_ts:
+    required: true
+    type: datetime
+    format: "%Y-%m-%d %H:%M:%S"
+    
+  amount:
+    required: true
+    type: float
+    checks:
+      min: 0
+      max: 10000
+
+  currency:
+    required: true
+    type: str
+    allowed_values: ["USD", "EUR"]
+
+  status:
+    required: true
+    type: str
+    allowed_values: ["paid", "refunded", "cancelled"]
