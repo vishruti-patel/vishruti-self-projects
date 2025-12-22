@@ -1,4 +1,4 @@
-# 🚀 Vishruti’s Data Engineering & Analytics Projects
+# 🚀 Data Engineering & Analytics Playground!
 
 Welcome!
 This repository is where my curiosity meets consistency and discipline...., where “I wonder what happens if…” turns into a growing collection of real-world inspired projects that demonstrate how I approach building reliable pipelines, analytics-ready datasets, quality validation systems, and data-driven solutions.
@@ -47,7 +47,8 @@ A SQL-focused analytics project using a **SaaS subscription dataset** to derive 
 - Resume & interview-friendly
 
 🔗 Project Folder →  
-👉 [`saas-subscriptions-sql-project`](./saas-subscriptions-sql-project)
+👉 [`saas-subscription-analytics`](./saas-subscription-analytics)
+
 
 ---
 
