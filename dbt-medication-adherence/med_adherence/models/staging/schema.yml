@@ -1,0 +1,88 @@
+# version: 2
+
+# models:
+#   - name: stg_patients
+#     description: "Staging model for patients with cleaned demographics and enrollment info."
+#     columns:
+#       - name: patient_id
+#         description: "Primary identifier for a patient."
+#         tests:
+#           - not_null
+#           - unique 
+
+#   - name: stg_medications
+#     description: "staging model for medications and therapeutic classes"
+#     columns:
+#       - name: medication_id
+#         description: "Primary identifier for a medication"
+#         tests:
+#           - not_null
+#           - unique
+
+#   - name: stg_prescriptions
+#     description: "staging model for prescriptions and fill events"
+#     columns:
+#       - name: prescription_id
+#         description: "Primary identifier for a prescription"
+#         tests:
+#           - not_null
+#           - unique
+#       - name: patient_id
+#         description: "Fk to stg_patients
+#         tests:
+#           - not_null
+#           - relationships:
+#             to: ref('stg_patients')
+#             field: patient_id
+#       - name: medication_id
+#         description: "FK to stg_medications"
+#         tests:
+#           - not_null
+#           - relationships:
+#             to: ref('stg_medications')
+#             field: medication_id
+  
+
+version: 2
+
+models:
+  - name: stg_patients
+    description: "Staging model for patients with cleaned demographics and enrollment info."
+    columns:
+      - name: patient_id
+        description: "Primary identifier for a patient."
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_medications
+    description: "Staging model for medications and their therapeutic classes."
+    columns:
+      - name: medication_id
+        description: "Primary identifier for a medication."
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_prescriptions
+    description: "Staging model for prescriptions and fill events."
+    columns:
+      - name: prescription_id
+        description: "Primary identifier for a prescription/fill event."
+        tests:
+          - not_null
+          - unique
+      - name: patient_id
+        description: "FK to stg_patients."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_patients')
+              field: patient_id
+      - name: medication_id
+        description: "FK to stg_medications."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_medications')
+              field: medication_id

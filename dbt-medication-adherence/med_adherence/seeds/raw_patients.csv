@@ -1,0 +1,6 @@
+patient_id,date_of_birth,gender,city,state,enrollment_date
+P001,1980-05-10,F,San Jose,CA,2023-01-15
+P002,1972-11-22,M,Fremont,CA,2023-02-01
+P003,1990-03-05,F,Oakland,CA,2023-03-10
+P004,1965-07-19,M,San Francisco,CA,2023-01-05
+P005,1958-09-30,F,San Diego,CA,2023-04-01

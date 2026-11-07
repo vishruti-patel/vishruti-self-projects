@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: int_patient_medication_fills
+    description: "Intermediate fact-like model with one row per medication fill, enriched with patient and medication attributes."
+    columns: 
+    - name: prescription_id
+      description: "Primary identifier for a prescription/fill event."
+      tests:
+        - not_null
+        - unique
+    - name: patient_id
+      description: "Patient identifier for the fill."
+      tests:
+        - not_null
+    - name: medication_id
+      description: "Medication identifier for the fill."
+      tests:
+        - not_null
+    - name: status
+      description: "Fill status (e.g., filled, canceled, reversed)."
+      tests:
+        - accepted_values:
+            values: ['filled', 'canceled', 'reversed']

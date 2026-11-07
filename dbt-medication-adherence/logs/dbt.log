@@ -1,0 +1,88 @@
+[0m12:57:18.935327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106918830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077b79d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077b7750>]}
+
+
+============================== 12:57:18.938568 | ccbb4144-6aef-4031-ba94-be05b96fb855 ==============================
+[0m12:57:18.938568 [info ] [MainThread]: Running with dbt=1.11.2
+[0m12:57:18.938958 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'no_print': 'None', 'fail_fast': 'False', 'log_format': 'default', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'invocation_command': 'dbt init med_adherence', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'quiet': 'False', 'introspect': 'True', 'profiles_dir': '/Users/vishruti/.dbt', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'static_parser': 'True', 'target_path': 'None', 'empty': 'None', 'indirect_selection': 'eager', 'version_check': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'warn_error': 'None'}
+[0m12:57:18.948606 [info ] [MainThread]: Creating dbt configuration folder at /Users/vishruti/.dbt
+[0m12:57:18.950235 [debug] [MainThread]: Starter project path: /Users/vishruti/workspace/vishruti-self-projects/dbt-medication-adherence/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m12:57:18.953907 [info ] [MainThread]: 
+Your new dbt project "med_adherence" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:57:18.954072 [info ] [MainThread]: Setting up your profile.
+[0m12:57:43.518618 [info ] [MainThread]: Profile med_adherence written to /Users/vishruti/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m12:57:43.523176 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 24.6302, "process_in_blocks": "0", "process_kernel_time": 0.178449, "process_mem_max_rss": "126255104", "process_out_blocks": "0", "process_user_time": 0.818924}
+[0m12:57:43.523540 [debug] [MainThread]: Command `dbt init` succeeded at 12:57:43.523458 after 24.63 seconds
+[0m12:57:43.523764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077ffbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070bc290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078b1150>]}
+[0m12:57:43.524001 [debug] [MainThread]: Flushing usage events
+[0m12:57:43.954091 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:43:07.279578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10435c2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051f7610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051f7890>]}
+
+
+============================== 13:43:07.290857 | 7bc77260-d55b-4b8f-a250-34c6357acd6e ==============================
+[0m13:43:07.290857 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:43:07.291235 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'write_json': 'True', 'quiet': 'False', 'profiles_dir': '/Users/vishruti/.dbt', 'warn_error': 'None', 'target_path': 'None', 'log_path': 'logs', 'log_cache_events': 'False', 'introspect': 'True', 'empty': 'None', 'log_format': 'default', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'version_check': 'True', 'printer_width': '80', 'indirect_selection': 'eager'}
+[0m13:43:07.305787 [info ] [MainThread]: dbt version: 1.11.2
+[0m13:43:07.306036 [info ] [MainThread]: python version: 3.13.2
+[0m13:43:07.306167 [info ] [MainThread]: python path: /Users/vishruti/workspace/vishruti-self-projects/dbt-medication-adherence/.venv/bin/python3.13
+[0m13:43:07.306286 [info ] [MainThread]: os info: macOS-15.0.1-arm64-arm-64bit-Mach-O
+[0m13:43:07.412914 [info ] [MainThread]: Using profiles dir at /Users/vishruti/.dbt
+[0m13:43:07.413209 [info ] [MainThread]: Using profiles.yml file at /Users/vishruti/.dbt/profiles.yml
+[0m13:43:07.413352 [info ] [MainThread]: Using dbt_project.yml file at /Users/vishruti/workspace/vishruti-self-projects/dbt-medication-adherence/dbt_project.yml
+[0m13:43:07.414560 [info ] [MainThread]: adapter type: duckdb
+[0m13:43:07.414733 [info ] [MainThread]: adapter version: 1.10.0
+[0m13:43:07.414879 [info ] [MainThread]: Configuration:
+[0m13:43:07.414995 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:43:07.415111 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:43:07.415220 [info ] [MainThread]: Required dependencies:
+[0m13:43:07.415372 [debug] [MainThread]: Executing "git --help"
+[0m13:43:07.435316 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:43:07.435843 [debug] [MainThread]: STDERR: "b''"
+[0m13:43:07.436022 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:43:07.436183 [info ] [MainThread]: Connection:
+[0m13:43:07.436341 [info ] [MainThread]:   database: med_adherence
+[0m13:43:07.436468 [info ] [MainThread]:   schema: main
+[0m13:43:07.436580 [info ] [MainThread]:   path: med_adherence.duckdb
+[0m13:43:07.436690 [info ] [MainThread]:   config_options: None
+[0m13:43:07.436795 [info ] [MainThread]:   extensions: None
+[0m13:43:07.436903 [info ] [MainThread]:   settings: {}
+[0m13:43:07.437006 [info ] [MainThread]:   external_root: .
+[0m13:43:07.437107 [info ] [MainThread]:   use_credential_provider: None
+[0m13:43:07.437209 [info ] [MainThread]:   attach: None
+[0m13:43:07.437308 [info ] [MainThread]:   filesystems: None
+[0m13:43:07.437411 [info ] [MainThread]:   remote: None
+[0m13:43:07.437510 [info ] [MainThread]:   plugins: None
+[0m13:43:07.437610 [info ] [MainThread]:   disable_transactions: False
+[0m13:43:07.438010 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:43:07.493281 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m13:43:07.519661 [debug] [MainThread]: Using duckdb connection "debug"
+[0m13:43:07.519861 [debug] [MainThread]: On debug: select 1 as id
+[0m13:43:07.519991 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:43:07.531278 [debug] [MainThread]: SQL status: OK in 0.011 seconds
+[0m13:43:07.531830 [debug] [MainThread]: On debug: Close
+[0m13:43:07.532175 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:43:07.532339 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:43:07.532465 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/vishruti/workspace/vishruti-self-projects/dbt-medication-adherence/dbt_project.yml> not found
+
+[0m13:43:07.533793 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.29693872, "process_in_blocks": "0", "process_kernel_time": 0.193051, "process_mem_max_rss": "133021696", "process_out_blocks": "0", "process_user_time": 0.767837}
+[0m13:43:07.534057 [debug] [MainThread]: Command `dbt debug` failed at 13:43:07.533998 after 0.30 seconds
+[0m13:43:07.534214 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:43:07.534390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105409cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105808290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052d5480>]}
+[0m13:43:07.534599 [debug] [MainThread]: Flushing usage events
+[0m13:43:07.927121 [debug] [MainThread]: An error was encountered while trying to flush usage events

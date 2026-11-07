@@ -1,0 +1,6 @@
+medication_id,medication_name,therapeutic_class,form,strength_mg
+M001,Lisinopril,Hypertension,Tablet,10
+M002,Metformin,Diabetes,Tablet,500
+M003,Atorvastatin,Cholesterol,Tablet,20
+M004,Amlodipine,Hypertension,Tablet,5
+M005,Insulin Glargine,Diabetes,Injection,100
